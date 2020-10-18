@@ -10,7 +10,7 @@ pipeline {
         }
         stage("Build Stage") {
             steps {
-                withGradle(gradle: 'gradle-6.7')) {
+                withGradle(gradle: 'gradle-6.7') {
                     sh 'gradle clean build'
                 }
             }
