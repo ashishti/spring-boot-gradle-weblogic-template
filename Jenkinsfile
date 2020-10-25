@@ -12,6 +12,7 @@ pipeline {
             steps {
                 withGradle(gradle: 'gradle-6.7') {
                     sh 'gradle clean build'
+                    comment'Hi'
                 }
             }
         }
